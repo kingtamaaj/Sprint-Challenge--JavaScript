@@ -91,7 +91,13 @@ const graduates = ($_$w(1, 10), [
         'email': 'hlethbrig9@foxnews.com'
     }
 ]);
-$_$w(1, 11), zooAnimals = [
+const uni = ($_$w(1, 11), []);
+for (let i = 0; $_$w(1, 12), i < graduates.length; i++) {
+    $_$w(1, 13), graduates[i].university === 'Uni';
+    $_$w(1, 14), uni.push(graduates[i]);
+}
+$_$w(1, 15), $_$tracer.log(uni, 'uni', 1, 15);
+$_$w(1, 16), zooAnimals = [
     {
         'animal_name': 'Jackal, asiatic',
         'population': 5,
@@ -153,10 +159,9 @@ $_$w(1, 11), zooAnimals = [
         'state': 'West Virginia'
     }
 ];
-const lowerCase = ($_$w(1, 12), []);
-$_$w(1, 13), $_$tracer.log(lowerCase, 'lowerCase', 1, 13);
-const largerPopulation = ($_$w(1, 14), []);
-$_$w(1, 15), $_$tracer.log(largerPopulation, 'largerPopulation', 1, 15);
-const populationTotal = ($_$w(1, 16), 0);
-$_$w(1, 17), $_$tracer.log(populationTotal, 'populationTotal', 1, 17);
+const populationTotal = ($_$w(1, 17), zooAnimals.reduce((populationTotal, eachAnimal) => {
+    $_$wf(1);
+    return $_$w(1, 18), populationTotal + eachAnimal.population;
+}, 0));
+$_$w(1, 19), $_$tracer.log(populationTotal, 'populationTotal', 1, 19);
 $_$wpe(1);
